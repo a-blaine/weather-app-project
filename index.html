@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/appstyle.css" />
+
+    <title>SheCodesPLUS Main Project</title>
+  </head>
+  <body>
+    <div class="container shadow-lg p-3 mb-5 rounded">
+      <div class="row">
+        <div class="col-10">
+          <form id="search-form">
+            <input
+              id="search-bar"
+              type="search"
+              placeholder="Search"
+              autocomplete="off"
+              autofocus="off"
+              class="form-control shadow-sm"
+            />
+          </form>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-outline-light">
+            Current location
+          </button>
+        </div>
+      </div>
+
+      <div class="location-information">
+        <h1 id="location">Seattle</h1>
+        <span class="location-date-time">
+          <div id="displayed-date">Wednesday 1st March, 2023</div>
+          <div id="displayed-time">14:13</div>
+        </span>
+      </div>
+
+      <div class="row current-information">
+        <div class="col-1"></div>
+        <div class="col-3 current-contents-left">
+          <span class="high-temp">
+            <a href="#" id="current-high-temp">19°</a></span
+          >/
+          <span class="low-temp">
+            <a href="#" id="current-low-temp">1°</a></span
+          >
+
+          <div class="current-emoji">☁️</div>
+        </div>
+        <div class="col-4 current-contents-center">
+          <div class="row">
+            <div class="col current-temp" id="current-temperature">17</div>
+            <div class="col units">
+              <a class="celsius" id="celsius-link" href="#">°C</a>
+              |<a class="fahrenheit" id="fahrenheit-link" href="#">°F</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 current-contents-right">
+          <div id="description">Cloudy</div>
+          <ul>
+            <li>Precipitation: 0%</li>
+            <li>Humidity: <span id="humidity">67%</span></li>
+            <li>Wind: <span id="wind"> 10km/h</span></li>
+          </ul>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <hr />
+
+      <div class="forecast-container shadow-sm">
+        <div class="row days">
+          <div class="col-2">Thu</div>
+          <div class="col-2">Fri</div>
+          <div class="col-2">Sat</div>
+          <div class="col-2">Sun</div>
+          <div class="col-2">Mon</div>
+          <div class="col-2">Tue</div>
+        </div>
+        <div class="row">
+          <div class="col-2 forecast-emoji">⛅</div>
+          <div class="col-2 forecast-emoji">☁️</div>
+          <div class="col-2 forecast-emoji">⛈️</div>
+          <div class="col-2 forecast-emoji">🌧️</div>
+          <div class="col-2 forecast-emoji">🌧️</div>
+          <div class="col-2 forecast-emoji">☁️</div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <span class="high-temp"> 8°</span>/<span class="low-temp"> 1°</span>
+          </div>
+          <div class="col-2">
+            <span class="high-temp"> 6°</span>/<span class="low-temp"> 1°</span>
+          </div>
+          <div class="col-2">
+            <span class="high-temp"> 6°</span>/<span class="low-temp">
+              -1°</span
+            >
+          </div>
+          <div class="col-2">
+            <span class="high-temp"> 8°</span>/<span class="low-temp">
+              -1°</span
+            >
+          </div>
+          <div class="col-2">
+            <span class="high-temp"> 8°</span>/<span class="low-temp"> 0°</span>
+          </div>
+          <div class="col-2">
+            <span class="high-temp"> 8°</span>/<span class="low-temp"> 0°</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/app.js"></script>
+  </body>
+</html>
