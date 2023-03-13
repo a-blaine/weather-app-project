@@ -42,7 +42,7 @@ button.btn:hover {
   background: #f3cba5;
   max-width: 800px;
   display: block;
-  margin: 30px auto 5px;
+  margin: 50px auto;
   box-sizing: border-box;
 }
 .p-3 {
@@ -143,8 +143,8 @@ button.btn:hover {
   text-align: center;
   font-family: monospace;
   font-size: 13px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: -35px;
+  margin-bottom: 10px;
   transition: all 200ms ease;
 }
 .footer a:hover {
