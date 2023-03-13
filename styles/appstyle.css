@@ -42,7 +42,7 @@ button.btn:hover {
   background: #f3cba5;
   max-width: 800px;
   display: block;
-  margin: 70px auto;
+  margin: 50px auto 10px;
   box-sizing: border-box;
 }
 .p-3 {
