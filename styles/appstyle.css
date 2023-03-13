@@ -141,6 +141,10 @@ button.btn:hover {
 .footer {
   color: #fff;
   text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 20px;
   transition: all 200ms ease;
 }
 .footer a:hover {
