@@ -25,6 +25,19 @@ hr {
   margin: 0px auto 6px;
 }
 
+button.btn {
+  border-radius: 26px;
+  border: #fff solid 1px;
+  color: #fff;
+  font-size: 13px;
+  padding: 2.5px;
+  transition: all 200ms ease;
+}
+button.btn:hover {
+  color: #b07577;
+  background: #f2d3b6;
+}
+
 .container {
   background: #f3cba5;
   max-width: 800px;
@@ -125,15 +138,12 @@ hr {
   opacity: 80%;
 }
 
-button.btn {
-  border-radius: 26px;
-  border: #fff solid 1px;
+.footer {
   color: #fff;
-  font-size: 13px;
-  padding: 2.5px;
+  text-align: center;
   transition: all 200ms ease;
 }
-button.btn:hover {
-  color: #b07577;
-  background: #f2d3b6;
+.footer a:hover {
+  color: #f3cba5;
+  text-decoration: underline;
 }
